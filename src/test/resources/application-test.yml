@@ -1,0 +1,10 @@
+spring:
+  confiig:
+    actiate:
+      on-profile: test
+  r2dbc:
+    name: testdb
+    platform: h2
+    url: r2dbc:h2:mem:///testdb
+    username:
+    password:
