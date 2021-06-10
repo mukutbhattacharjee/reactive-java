@@ -1,3 +1,7 @@
 language: java
-install:
-  - mvn clean install
+install: mvn clean install
+env:
+  global:
+    - CODECOV_TOKEN='d1499820-e74c-4f64-9dc2-a6bbc9e2243e'
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
